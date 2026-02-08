@@ -32,10 +32,10 @@ const educationData = [
     description: "A workshop on biotechnology in health science and therapeutics, covering topics like molecular biology, drug discovery, and therapeutic applications."
   },
   {
-    title: "Certificates",
-    institution: "Issuing Organizations",
-    year: "Various Years",
-    description: "Placeholder for certifications and credentials."
+    title: "Sports and Co-curricular Activities",
+    institution: "Don Bosco Institute of Technology",
+    year: "2023 - Current",
+    description: "Sports participation in Basketball, along with active involvement in co-curricular activities like the Techno Club and ITRang, fostering teamwork, leadership, and a well-rounded college experience."
   }
 ];
 
