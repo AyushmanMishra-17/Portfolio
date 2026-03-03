@@ -3,9 +3,6 @@ import { motion } from "framer-motion";
 const technicalSkills = [
   "Python",
   "Machine Learning",
-  "Deep Learning",
-  "NLP",
-  "FastAPI",
   "React",
   "SQL",
   "Git & GitHub",
@@ -16,7 +13,10 @@ const technicalSkills = [
   "Java",
   "Javascript",
   "PHP",
-  "DJango"
+  "Tailwind CSS",
+  "HTML",
+  "C++",
+  "JSX"
 ];
 
 const softSkills = [
