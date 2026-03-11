@@ -16,7 +16,10 @@ const technicalSkills = [
   "Tailwind CSS",
   "HTML",
   "C++",
-  "JSX"
+  "JSX",
+  "Excel",
+  "PowerBI",
+  "Tableau"
 ];
 
 const softSkills = [
