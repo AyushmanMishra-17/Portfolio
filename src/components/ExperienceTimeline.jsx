@@ -13,7 +13,7 @@ const experienceData = [
   {
     role: "Head Coordinator",
     organization: "ITRang, Annual Tech & Cultural Fest of Don Bosco Institute of Technology",
-    duration: "Year – Year",
+    duration: "2025",
     responsibilities: [
       "Responsible for coordinating and managing the annual tech and cultural fest.",
       "Led a team of coordinators to ensure smooth execution of events.",
