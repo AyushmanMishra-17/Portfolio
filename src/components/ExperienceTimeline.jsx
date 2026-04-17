@@ -29,7 +29,18 @@ const experienceData = [
         "Contributed to the planning and execution of community service projects and events.",
         "Collaborated with other board members to strategize and implement initiatives that align with the club's mission."
         ]
+    },
+    {
+    role: "Tech Intern",
+    organization: "Tronixia Technologies, Bangalore",
+    duration: "March 2026 - April 2026",
+    responsibilities: [
+      "Completed a comprehensive software testing internship where I performed manual, UI, regression, and API testing on a real-world web application.",
+      "Designed and executed structured test cases, identified critical bugs, and validated backend services using Postman.",
+      "Gained hands-on experience with industry tools like Git, GitHub, and Excel while applying practical QA methodologies."
+        ]
     }
+    
 ];
 
 export default function ExperienceTimeline() {
