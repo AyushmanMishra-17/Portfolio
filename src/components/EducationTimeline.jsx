@@ -41,42 +41,52 @@ const educationData = [
 
 export default function EducationTimeline() {
   return (
-    <section className="py-24 px-6">
+    <section className="py-24 px-6 relative">
       <div className="max-w-5xl mx-auto">
 
-        <motion.h3
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="text-3xl font-bold text-center mb-16"
+          className="text-center mb-16"
         >
-          Education & Learning
-        </motion.h3>
+          <h3 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+            Education & Learning
+          </h3>
+          <p className="text-slate-400 text-lg">Academic achievements and continuous learning</p>
+        </motion.div>
 
-        <div className="relative border-l border-white/20 ml-4">
+        <div className="relative border-l-2 border-gradient-to-b from-indigo-500/40 via-purple-500/40 to-pink-500/40 ml-4">
           {educationData.map((item, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, x: -30 }}
+              initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="mb-12 ml-8 relative"
+              className="mb-12 ml-8 relative group"
             >
-              {/* Timeline Dot */}
-              <span className="absolute -left-[38px] top-1.5 w-4 h-4 rounded-full bg-indigo-400 shadow-lg shadow-indigo-400/40"></span>
+              <motion.span 
+                className="absolute -left-[39px] top-2 w-5 h-5 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 shadow-lg"
+                whileInView={{ scale: [1, 1.3, 1] }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <span className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 animate-ping opacity-75" />
+              </motion.span>
 
-              <div className="bg-white/5 backdrop-blur border border-white/10 rounded-xl p-6">
-                <h4 className="text-xl font-semibold mb-1">{item.title}</h4>
-                <p className="text-sm text-indigo-400 mb-1">
-                  {item.institution}
-                </p>
-                <p className="text-xs text-slate-500 mb-3">{item.year}</p>
-                <p className="text-slate-400 text-sm">
-                  {item.description}
-                </p>
-              </div>
+              <motion.div
+                className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-2xl p-6 overflow-hidden group-hover:border-purple-400/50 transition-all duration-300"
+                whileHover={{ scale: 1.02, y: -5 }}
+              >
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-purple-500/10 to-transparent rounded-bl-full" />
+                
+                <h4 className="text-xl font-bold mb-2 text-white">{item.title}</h4>
+                {item.institution && (
+                  <p className="text-purple-400 font-medium mb-1">{item.institution}</p>
+                )}
+                <p className="text-sm text-slate-500 mb-3">{item.year}</p>
+                <p className="text-slate-300 text-sm leading-relaxed">{item.description}</p>
+              </motion.div>
             </motion.div>
           ))}
         </div>

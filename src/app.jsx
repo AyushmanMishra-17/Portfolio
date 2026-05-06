@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollProgress from "./components/ScrollProgress";
 import BackgroundGlow from "./components/BackgroundGlow";
+import AnimatedCursor from "./components/AnimatedCursor";
 import Home from "./pages/Home";
 import ProjectsPage from "./pages/ProjectsPage";
 
@@ -10,6 +11,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <BackgroundGlow />
+      <AnimatedCursor />
       <ScrollProgress />
       <Navbar />
 

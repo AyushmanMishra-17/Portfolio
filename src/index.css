@@ -2,16 +2,99 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background: radial-gradient(
-      circle at top left,
-      rgba(124, 124, 255, 0.15),
-      transparent 40%
-    ),
-    radial-gradient(
-      circle at bottom right,
-      rgba(0, 255, 200, 0.12),
-      transparent 40%
-    ),
-    #020617;
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-50;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-900;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-indigo-500/50 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-indigo-500/70;
+  }
+}
+
+@layer components {
+  /* Gradient text effect */
+  .gradient-text {
+    @apply bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent;
+  }
+
+  /* Glass morphism */
+  .glass {
+    @apply backdrop-blur-xl bg-white/5 border border-white/10;
+  }
+
+  /* Neon glow effect */
+  .neon-glow {
+    @apply shadow-lg shadow-indigo-500/50;
+  }
+
+  /* Floating animation */
+  .float-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  /* Gradient background */
+  .gradient-bg {
+    background: linear-gradient(-45deg, #1e1b4b, #312e81, #1e293b, #0f172a);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+}
+
+@layer utilities {
+  /* Text shadow utilities */
+  .text-shadow-sm {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .text-shadow-md {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Glow utilities */
+  .glow-indigo {
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
+  }
+
+  .glow-cyan {
+    box-shadow: 0 0 20px rgba(34, 211, 238, 0.5);
+  }
+
+  .glow-purple {
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+  }
+}
+
+/* Particle effect container */
+.particles-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
 }

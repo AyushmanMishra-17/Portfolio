@@ -1,164 +1,90 @@
----
+# Enhanced Portfolio - Ayushman Mishra
 
-# 🌐 Personal Portfolio Website
+A modern, animated portfolio website built with React, Tailwind CSS, and Framer Motion.
 
-A modern, animated personal portfolio website built to showcase my skills, experience, education, and projects in a clean, professional, and recruiter-friendly manner.
+## Features
 
-This portfolio focuses on strong personal branding, smooth UI animations, and a scalable structure for adding advanced projects over time.
+✨ **Premium Animations**
+- Smooth page transitions with Framer Motion
+- Animated gradient backgrounds
+- Interactive hover effects
+- Custom animated cursor
+- Scroll progress indicator
 
----
+🎨 **Modern Design**
+- Glass morphism effects
+- Gradient text and borders
+- Floating animations
+- Responsive layout
+- Dark theme with vibrant accents
 
-## ✨ Features
+## Setup & Installation
 
-* 🎨 Modern UI with gradients, glassmorphism, and clean layouts
-* 🎥 Smooth animations using Framer Motion
-* 🧠 Skills section (Technical + Soft Skills)
-* 🧑‍💼 Experience section for college posts and responsibilities
-* 🎓 Education timeline (Class 10th, Class 12th, Courses, Certificates)
-* 📁 Dedicated Projects page
-* 📱 Fully responsive (mobile, tablet, desktop)
-* 🌙 Dark-themed professional aesthetic
-* 🔗 React Router for multi-page navigation
-* 🌍 Ready for deployment on Vercel
+```bash
+# Install dependencies
+npm install
 
----
+# Run development server
+npm run dev
 
-## 🛠️ Tech Stack
+# Build for production
+npm run build
 
-### Frontend
+# Preview production build
+npm run preview
+```
 
-* React (Vite)
-* Tailwind CSS
-* Framer Motion
-* React Router DOM
+## Technologies Used
 
-### Deployment
+- React 18
+- Vite
+- Tailwind CSS
+- Framer Motion
+- React Router DOM
 
-* Vercel
-
----
-
-## 📂 Project Structure
+## Project Structure
 
 ```
-Portfolio/
-├── public/
-│   └── favicon.jpg
-│
+portfolio-enhanced/
 ├── src/
-│   ├── assets/
-│   │   └── profile.jpg
-│   │
 │   ├── components/
-│   │   ├── Hero.jsx
-│   │   ├── Skills.jsx
-│   │   ├── ExperienceTimeline.jsx
+│   │   ├── AnimatedCursor.jsx
+│   │   ├── BackgroundGlow.jsx
 │   │   ├── EducationTimeline.jsx
-│   │   ├── Projects.jsx
+│   │   ├── ExperienceTimeline.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Navbar.jsx
 │   │   ├── ProjectCard.jsx
+│   │   ├── Projects.jsx
 │   │   ├── ScrollProgress.jsx
 │   │   ├── SectionDivider.jsx
-│   │   └── BackgroundGlow.jsx
-│   │
+│   │   └── Skills.jsx
 │   ├── pages/
 │   │   ├── Home.jsx
 │   │   └── ProjectsPage.jsx
-│   │
+│   ├── assets/
+│   │   └── Profile.jpg
 │   ├── app.jsx
 │   ├── main.jsx
 │   └── index.css
-│
 ├── index.html
-├── tailwind.config.js
-├── postcss.config.js
-├── vite.config.js
 ├── package.json
-├── package-lock.json
-└── README.md
+├── tailwind.config.js
+├── vite.config.js
+└── postcss.config.js
 ```
 
----
+## Deployment
 
-## 🚀 Getting Started (Local Setup)
+This portfolio can be deployed to Vercel, Netlify, or any static hosting service.
 
-### 1. Clone the repository
-
+For Vercel:
 ```bash
-git clone https://github.com/YOUR_USERNAME/Portfolio.git
-cd Portfolio
-```
-
-### 2. Install dependencies
-
-```bash
-npm install
-```
-
-### 3. Run the development server
-
-```bash
-npm run dev
-```
-
-The application will run at:
-
-```
-http://localhost:5173
+npm run build
+# Deploy the dist folder
 ```
 
 ---
 
-## 🌍 Deployment (Vercel)
-
-This project is designed for deployment on **Vercel**.
-
-### Deployment Steps:
-
-1. Push the repository to GitHub
-2. Import the repository into Vercel
-3. Set the build configuration:
-
-   * Framework Preset: **Vite**
-   * Build Command: `npm run build`
-   * Output Directory: `dist`
-
-### React Router Fix (Required)
-
-Create a `vercel.json` file in the project root:
-
-```json
-{
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
-  ]
-}
-```
-
----
-
-## 🧠 Future Enhancements
-
-* Add advanced AI & full-stack projects
-* Add achievements and awards section
-* Add a contact form with email integration
-* SEO optimization
-* Custom domain integration
-
----
-
-## 👤 Author
-
-**Ayushman Mishra**
-Machine Learning & Full-Stack Developer
-
-* GitHub: [https://github.com/AyushmanMishra-17](https://github.com/AyushmanMishra-17)
-* Portfolio: Live URL (after deployment)
-
----
-
-## 📜 License
-
-This project is intended for **personal portfolio use**.
-Please do not reuse the design or structure directly without permission.
-
----
+© 2026 Ayushman Mishra
