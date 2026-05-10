@@ -53,7 +53,7 @@ export default function ExperienceTimeline() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h3 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+          <h3 className="text-4xl md:text-5xl font-bold mb-4 pb-2 bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent leading-tight">
             Experience & Responsibilities
           </h3>
           <p className="text-slate-400 text-lg">My professional journey and leadership roles</p>

@@ -31,7 +31,7 @@ function Hero() {
               transition={{ delay: 0.3 }}
             >
               Designing & building<br />
-              <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent pb-1 inline-block">
                 real-world AI systems
               </span>
             </motion.h2>
