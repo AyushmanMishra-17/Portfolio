@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 const technicalSkills = [
   "Python", "Machine Learning", "React", "SQL", "Git & GitHub", "Docker",
   "Data Analysis", "Cybersecurity", "C Language", "Java", "Javascript",
-  "PHP", "Tailwind CSS", "HTML", "C++", "JSX", "Excel", "PowerBI", "Tableau"
+  "PHP", "Tailwind CSS", "HTML", "C++", "JSX", "Excel", "PowerBI", "Tableau",
+  "AI/ML","FIGMA","Django","Arduino IDE","XML"
 ];
 
 const softSkills = [
