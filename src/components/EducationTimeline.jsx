@@ -10,7 +10,7 @@ const educationData = [
   {
     title: "Class 12th",
     institution: "Notre Dame School",
-    year: "2023",
+    year: "2024",
     description: "Commerce Stream - 88.9% - CBSE Board, with a focus on English, Computer Science, Business Studies, economics, and accountancy."
   },
   {
