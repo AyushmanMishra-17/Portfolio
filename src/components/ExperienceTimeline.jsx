@@ -21,7 +21,7 @@ const experienceData = [
     ]
   },
   {
-    role: "Content Writer & Board of Directors Member",
+    role: "Content Writer, Joint Secretary & Board of Director",
     organization: "Rotaract Club of Don Bosco Institute of Technology, Sankalp",
     duration: "2024 – Current",
     responsibilities: [

@@ -16,7 +16,7 @@ const educationData = [
   {
     title: "Ethical hacking & Cybersecurity Courses",
     institution: "",
-    year: "Ongoing",
+    year: "2026",
     description: "A course on ethical hacking and cybersecurity, covering topics like penetration testing, network security, and vulnerability assessment."
   },
   {
