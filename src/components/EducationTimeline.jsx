@@ -2,16 +2,16 @@ import { motion } from "framer-motion";
 
 const educationData = [
   {
-    title: "Class 10th",
-    institution: "Notre Dame School",
-    year: "2021",
-    description: "74.7% - CBSE Board, with a strong foundation in core subjects and extracurriculars."
-  },
-  {
     title: "Class 12th",
     institution: "Notre Dame School",
     year: "2024",
     description: "Commerce Stream - 88.9% - CBSE Board, with a focus on English, Computer Science, Business Studies, economics, and accountancy."
+  },
+  {
+    title: "Bachelors in Computer Application",
+    institution: "Don Bosco Institute of Technology, New Delhi",
+    year: "2024",
+    description: "Currently Ongoing Degree with Cumulative GPA of 8.89/10, focusing on software development, data structures, algorithms, web technologies, Data Science and AI/ML"
   },
   {
     title: "Ethical hacking & Cybersecurity Courses",
